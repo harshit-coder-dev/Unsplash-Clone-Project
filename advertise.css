@@ -8,7 +8,7 @@
     display:flex;
     justify-content: space-around;
     margin-top:20px;
-    border:1px solid red;
+
 }
 #container>div{
     height:600px;
@@ -43,3 +43,43 @@
 .img-1{
     width:100%;
 }
+.middle-para{
+    border:1px solid green;
+    text-align: center;
+    margin-top:50px;
+}
+#container-2{
+   display:flex;
+}
+#container-3{
+    border:1px solid red;
+    width:60%;
+    height:200px;
+    margin:auto;
+    margin-top: 200px;
+}
+#container-3>h3{
+    text-align: center;
+    font-size: 40px;
+}
+#container-3>p{
+    width:70%;
+    border:1px solid blue;
+    margin:auto;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+}
+#container-4{
+    width:90%;
+    border:1px solid green;
+    margin:auto;
+    margin-top:120px;
+}
+#container-4>img{
+    width:100%;
+}
+
+
