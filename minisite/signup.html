@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: white;
+      }
+      div {
+        background-color: pink;
+        width: 60%;
+        margin: auto;
+        padding: 10%;
+      }
+      input,
+      button {
+        width: 100%;
+        font-size: 20px;
+        display: block;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" />
+        <button id="signup">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  let form = document.querySelector("form");
+    let userData=JSON.parse(localStorage.getItem("userData")) || [];
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    let data = {
+      name: form.name.value,
+      email:form.email.value,
+      password:form.password.value,
+    };
+    if(checkEmails(data.email)===true){
+        userData.push(data)
+        localStorage.setItem("userData",JSON.stringify(userData))  
+        alert("Sign Up Successful, Please Sign in")
+        window.location.href="signin.html" 
+    }else{
+        alert("Account already exists")
+    }
+    console.log(data);
+  });
+
+  function checkEmails(email){
+    let filtered = userData.filter(function(ele){
+        return (email===ele.email)
+    });
+    if (filtered.length>0){
+        return false;
+    }else{
+        return true;
+    }
+  }
+</script>
