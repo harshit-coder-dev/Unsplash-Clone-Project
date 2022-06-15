@@ -51,20 +51,19 @@
 #container-2{
    display:flex;
 }
-#container-3{
-    border:1px solid red;
+.container-3{
+
     width:60%;
     height:200px;
     margin:auto;
-    margin-top: 200px;
+    margin-top:100px;
 }
-#container-3>h3{
+.container-3>h3{
     text-align: center;
     font-size: 40px;
 }
-#container-3>p{
+.container-3>p{
     width:70%;
-    border:1px solid blue;
     margin:auto;
     margin-top: 20px;
     font-weight: 500;
@@ -74,12 +73,86 @@
 }
 #container-4{
     width:90%;
-    border:1px solid green;
     margin:auto;
     margin-top:120px;
 }
 #container-4>img{
     width:100%;
 }
+#container-5{
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    border:1px solid red;
+    gap:20px;
+    margin:auto;
+    margin-top:60px;
+    
+}
+
+.box-1>div>img{
+    display:block;
+    margin:auto;
+}
+.box-1>div>h1{
+    font-size: 20px;
+}
+.box-1>div>p{
+    margin-top:20px; 
+    line-height: 1.5;
+}
+.second{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding:20px 0px 20px 20px;
+}
+.unique{
+    width:58%;
+}
+
+#par1{
+width:80%;
+}
+#par2{
+    width:80%;
+}
+#par3{
+    width:85%;
+}
+#par4{
+    width:85%;
+}
+#pic-size{
+    width:45%;
+}
+#container-6{
+    width:100%;
+    background-color:#eeeeee;
+    height:250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#container-6>button{
+    width:15%;
+    padding:5px;
+    background-color: black;
+    color:white;
+    border-radius: 3px;
+    border:none;
+    height:40px;
+}
+#container-7{
+    width:100%;
+    margin-top:60px;
+}
+#container-7>img{
+    width:100%;
+    margin:0px 80px 0px -80px;
+}
+
+
+
+
 
 
