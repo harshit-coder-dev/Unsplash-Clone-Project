@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #butn-1{
+
+            position: absolute;
+            right:20px;
+            bottom:20px;
+           
+       }
+       #butn-2{
+           position: absolute;
+           right:40px;
+           bottom:20px;
+          
+       }
+    </style>
+</head>
+<body>
+    <img src="http://127.0.0.1:5500/page4.html" alt="">
+    <button id="butn-1"><</button>
+    <button id="butn-2">></button>
+</body>
+</html>
+<script>
+   let btns= document.querySelectorAll("button");
+   let index=0;
+    let pageArr=[
+        "http://127.0.0.1:5500/page1.html",
+        "http://127.0.0.1:5500/page2.html",
+        "http://127.0.0.1:5500/page3.html",
+        "http://127.0.0.1:5500/page4.html"
+    ];
+    console.log(pageArr);
+    btns[0].addEventListener("click",function(){
+         if(index===0){
+             index=pageArr.length-1;
+         }else{
+             index--;
+         }
+         document.querySelector("img").src=pageArr[index];
+    })
+    btns[1].addEventListener("click",function(){
+         if(index===pageArr.length-1){
+         index=0;
+         }else{
+           index++;
+         }
+         document.querySelector("img").src=pageArr[index];
+    })
+
+</script>
