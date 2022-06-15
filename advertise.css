@@ -320,6 +320,7 @@ a{
     margin:auto;
     display:flex;
     margin-top:30px;
+    position: relative;
 }
 .container-13>div{
     width:50%;
@@ -356,7 +357,7 @@ li{
 hr{
     width:90%;
     margin:auto;
-    border:solid grey;
+    border:0.5px solid grey;
 }
 .container-14{
     width:90%;
