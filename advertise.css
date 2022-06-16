@@ -413,21 +413,36 @@ hr{
   /* flex-container properties */
   .flex-container{
       width:100%;
-      display:grid;
-      grid-template-columns: repeat(10,1fr);
-      grid-template-rows: repeat(2,100px);
-      gap:30px;
-      height:300px;
+      display:flex;
+      justify-content: space-evenly;
+      background-color: #fafafa;
+      border-radius: 8px;
   }
   .flex-container>div{
-    transition-property: linear;
-    transition-duration:10s ;
+    width:8%;
   }
   .flex-container>div>img{
       width:100%;
   }
+  .flex-container-1{
+    width:100%;
+    display:flex;
+    margin-top:50px;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+.flex-container-1>div{
+  width:7%;
+}
+.flex-container-1>div>img{
+    width:100%;
+}
+  
+  
   /* flex-properties-end */
 
+  
 a{
     color:grey;
     text-decoration: none;
