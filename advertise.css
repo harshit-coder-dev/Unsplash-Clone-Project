@@ -377,9 +377,9 @@ hr{
     justify-content: space-between;
 }
 .container-14>div{
-    width:25%;
     height:80px;
     margin-top:10px;
+    width:30%;
 }
 .container-14>div:nth-child(2){
     display:flex;
@@ -388,11 +388,11 @@ hr{
 }
 .container-14>div:nth-child(1){
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     color:grey;   
 }
 .container-14>div:nth-child(1)>a>img{
-    width:100%;
+    width:18%;
 }
 .unsplash{
     display:flex;
@@ -408,6 +408,9 @@ hr{
   }
   .bottom-link:hover{
       color:black;
+  }
+  .container-14>div:nth-child(1)>p{
+      margin-left:-60%;
   }
 
 
