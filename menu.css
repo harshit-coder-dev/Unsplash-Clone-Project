@@ -1,15 +1,21 @@
 .change {
-    visibility: hidden;
-  }
- 
-  #menu {
+  visibility: visible;
+}
+#bar{
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+span+div{
+  visibility: hidden;
+}
+#menu {
     position: absolute;
-    margin-top: 10px;
     width: 50%;
     border: 1px solid gray;
     background-color: white;
-    right: 20px;
-    top: 55px;
+    right: 49px;
+    top: 62px;
     border-radius: 3px;
   }
 
@@ -46,7 +52,7 @@
     text-decoration: none;
     color: gray;
   }
-  p {
+ header p {
     color: black;
     font-size: 18px;
     font-weight: 700;
@@ -58,11 +64,7 @@
     height: 22px;
     margin-top: 25px;
   }
-  .fa-bars {
-    color: gray;
-    font-size: 30px;
-    cursor: pointer;
-  }
+
   svg {
     margin-right: 10px;
   }
