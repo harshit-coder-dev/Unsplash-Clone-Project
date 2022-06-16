@@ -17,10 +17,15 @@
     width:100%;
    
 }   
+
 #container>div:nth-child(1){
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+#container>div:nth-child(2){
+    margin-right:-80px;
+    margin-top: 40px;
 }
 
 .head{
@@ -29,7 +34,7 @@
   
 }
 #button-1{
-    width:30%;
+    width:25%;
     padding:5px;
     background-color: black;
     color:white;
@@ -47,13 +52,14 @@
     margin-top: 20px;
 }
 #img-1{
-    width:100%;
+    width:90%;
 }
 .middle-para{
     display:flex;
     justify-content: center;
     align-items: center;
     height:150px;
+    margin-top:70px;
     
 }
 #container-2{
@@ -417,6 +423,7 @@ hr{
       justify-content: space-evenly;
       background-color: #fafafa;
       border-radius: 8px;
+      margin-top:20px;
   }
   .flex-container>div{
     width:8%;
