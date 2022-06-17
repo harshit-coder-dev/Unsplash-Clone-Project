@@ -96,6 +96,25 @@
 #adsContainer>div{
     border: 1px solid rgb(202, 200, 200);
     border-radius: 5px;
+    display: none;
+}
+#adsContainer>div:nth-child(1){
+    display: block;
+}
+#adsContainer>div:nth-child(2){
+    display: block;
+}
+#adsContainer>div:nth-child(3){
+    display: block;
+}
+#adsContainer>div:nth-child(4){
+    display: block;
+}
+#adsContainer>div:nth-child(5){
+    display: block;
+}
+#adsContainer>div:nth-child(6){
+    display: block;
 }
 #adsContainer>div:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;

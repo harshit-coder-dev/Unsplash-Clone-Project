@@ -81,4 +81,17 @@ item.forEach(function(elem){
     product.append(image,div);
     document.querySelector("#adsContainer").append(product); 
 })
-
+let loadMorebtn = document.querySelectorAll("#adsContainer>div");
+let btn = document.querySelector("#LoadMore");
+let curr = 6;
+btn.addEventListener("click",function(){
+    for(let i=curr;i<curr+6;i++){
+        if(loadMorebtn[i]){
+            loadMorebtn[i].style.display="inline-block";
+        }
+    }
+    curr += 6;
+    if(curr>=loadMorebtn.length){
+        btn.style.display="none";
+    }
+})
