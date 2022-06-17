@@ -62,6 +62,9 @@
     align-items: center;
     width: auto;
 }
+#main2 a{
+    color: #767676;
+}
 #container>div:nth-child(1){
     width: 100%;
     text-align: center;
