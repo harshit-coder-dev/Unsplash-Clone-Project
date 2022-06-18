@@ -80,6 +80,7 @@ function Displaytable(){
         footer.style.margin ="20px 0px 20px 0px"
         div.append(topic,subTopic,footer)
         product.append(image,div);
+        console.log(product);
         document.querySelector("#adsContainer").append(product); 
     })
 }

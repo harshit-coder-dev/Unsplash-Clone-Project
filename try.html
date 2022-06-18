@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="try.css" />
+    <script
+      src="https://kit.fontawesome.com/4560e2a1c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #main > div {
+        border: 1px solid transparent;
+        width: 100%;
+        position: relative;
+      }
+      #main > div {
+        opacity: 1;
+      }
+      #main img {
+        width: 100%;
+      }
+      #main > div > div {
+        opacity: 0;
+        z-index: 1;
+        transition: all 2s;
+      }
+      #main > div > div > div {
+        bottom: 25px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        gap: 15px;
+        /* width: 81%; */
+        position: absolute;
+      }
+      .fa-download {
+        position: absolute;
+        bottom: 25px;
+        background: gray;
+        right: 10px;
+        color: black;
+        font-size: 28px;
+        padding: 8px;
+        cursor: pointer;
+        border: 1px solid;
+      }
+
+      .fa-plus {
+        position: absolute;
+        right: 15px;
+        color: black;
+        top: 23px;
+        font-size: 25px;
+        padding: 8px;
+        border: 1px solid;
+        cursor: pointer;
+      }
+
+      .fa-heart {
+        position: absolute;
+        right: 60px;
+        color: black;
+        top: 23px;
+        font-size: 25px;
+        padding: 8px;
+        border: 1px solid transparent;
+        cursor: pointer;
+      }
+      #main > div:hover > div {
+        opacity: 1;
+      }
+      #main {
+        column-count: 3;
+        max-width: 90%;
+        margin: auto;
+        background-color: beige;
+        padding: 30px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      #main > img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: papayawhip;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-sizing: border-box;
+      }
+      img {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+</html>
+<script src="try.js"></script>
