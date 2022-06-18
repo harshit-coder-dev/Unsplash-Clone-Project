@@ -261,6 +261,30 @@
     cursor: pointer;
 }
 @media all and (max-width:1014px) and (min-width:620px){
+    #main {
+        width: 100%;
+        height: 70px;
+      }
+      #main > div:nth-child(1) > a {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+      }
+      #main > div:nth-child(2) {
+        margin: auto;
+        width: 100%;
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      #main > div:nth-child(2) > p {
+        font-size: 15px;
+      }
+      #main > div:nth-child(3) {
+        display: none;
+      }
     
     #container>div:nth-child(3){
         width: 12%;
@@ -277,6 +301,63 @@
         width: 96%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .footer{
+        width: 96%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #line{
+        width: 96%;
+    }
+}
+@media all and (max-width:619px) and (min-width:144px){
+    #main {
+        width: 100%;
+        height: 70px;
+      }
+      #main > div:nth-child(1) > a {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+      }
+      #main > div:nth-child(2) {
+        margin: auto;
+        width: 100%;
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      #main > div:nth-child(2) > p {
+        font-size: 15px;
+      }
+      #main > div:nth-child(3) {
+        display: none;
+      }
+    #container>div:nth-child(3){
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #container>div:nth-child(5){
+        width: 70%;
+    }
+    #adsContainer>div{
+        width: 80%;
+    }
+    #lastCont{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
         grid-template-rows: auto;
         gap: 20px;
         margin: auto;

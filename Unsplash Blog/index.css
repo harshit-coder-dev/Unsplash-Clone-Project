@@ -356,11 +356,14 @@ hr {
   }
   #main > div:nth-child(2) {
     margin: auto;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    width: 100%;
+   
+  }
+  #main > div:nth-child(2) > p {
+    font-size: 15px;
+  }
+  #main > div:nth-child(3) {
+    display: none;
   }
   #container > div:nth-child(1) {
     width: 100%;
