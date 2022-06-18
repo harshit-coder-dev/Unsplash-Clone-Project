@@ -226,7 +226,9 @@
   console.log(user_records)
   if(user_records.some((v)=>{return v.email==eml && v.password==psw})){
     alert("Login Success");
-    window.location.href="https://unsplash.com/"
+    let current_user=user_records.filter((v)=>{return v.email==eml && v.password==psw})[0]
+    localStorage.setItem("name",current_user.name);
+    window.location.href="file:///C:/Users/RAJ%20MECH/Desktop/FirstProject/Unsplash-Clone-Project/homepage.html"
 
   }
   else{
