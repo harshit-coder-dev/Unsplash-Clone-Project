@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/4560e2a1c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      *{
+        list-style: none;
+      }
+      nav {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 300px;
+        transform: translate(-50%, -50%);
+        background-color: rgb(0, 55, 255);
+        line-height: 40px;
+        padding: 8px 25px;
+      }
+      label {
+        color: aqua;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .fa-solid {
+        float: right;
+        line-height: 35px;
+      }
+      nav>ul{
+        position: absolute;
+        background-color: palevioletred;
+        width: 80%;
+        display: none;
+      }
+      nav>ul>li{
+        border-bottom: 1px solid;
+        line-height: 40px;
+        padding: 8px 20px;
+
+      }
+      nav>ul>li>a{
+        color: white;
+      }
+      .menu{
+        position: static;
+      }
+      .menu::before{
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+      } 
+      .menu>li{
+        line-height: 30px;
+        padding-left: 30px;
+      }
+      nav>ul>li>a:hover{
+        color: aqua;
+      }
+      input{
+        display: none;
+      }
+      #btn:checked+ul{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <label for="btn" class="button"
+        >Company <span class="fa-solid fa-caret-down"></span
+      ></label>
+      <input type="checkbox" id="btn">
+      <ul class="menu">
+        <li><a href="">About</a></li>
+        <li><a href="">Advrtise</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">History</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
