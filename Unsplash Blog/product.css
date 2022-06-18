@@ -209,7 +209,7 @@ hr{
     color: black;
     cursor: pointer;
 }
-@media all and (min-width: 620px) and (max-width: 1024px){
+@media all and (min-width: 620px) and (max-width: 1014px){
     #main{
         width: 100%;
         height: 70px;       
