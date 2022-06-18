@@ -80,6 +80,10 @@ function Displaytable(){
         footer.style.margin ="20px 0px 20px 0px"
         div.append(topic,subTopic,footer)
         product.append(image,div);
+<<<<<<< HEAD:Blog/index.js
+=======
+        console.log(product);
+>>>>>>> 6833e7d93264adedfc8e552cb5ef955515b199ee:Unsplash Blog/index.js
         document.querySelector("#adsContainer").append(product); 
     })
 }
