@@ -94,3 +94,39 @@ span+div{
   #footer div {
     display: flex;
   }
+  #Profile {
+    width: 8%;
+    height: 25px;
+    display: flex;
+    margin-left: 50px;
+    
+}
+
+#Profile>div:nth-child(1) {
+    width: 60%;
+    height: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+   
+
+}
+
+#Profile>div:nth-child(2) {
+    width: 30%;
+    height: 25px;
+   
+    margin: auto;
+    display: flex;
+}
+
+#Profile>img>{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#Profile>div>h5{
+   margin-top: 6px;
+   margin-right: 10px;
+  
+}
