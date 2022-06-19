@@ -7,7 +7,7 @@
     "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
     sans-serif;
 }
-#main {
+#company {
   width: 100%;
   height: 70px;
   display: flex;
@@ -28,7 +28,7 @@
   background-color: black;
   height: 10px;
 }
-#main > div:nth-child(1) > a {
+#company > div:nth-child(1) > a {
   width: 40px;
   height: 40px;
   position: relative;
@@ -39,7 +39,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
 }
-#main > div:nth-child(2) {
+#company > div:nth-child(2) {
   margin: auto;
   width: 30%;
 
@@ -48,19 +48,19 @@
   align-items: center;
   gap: 20px;
 }
-#main > div:nth-child(2) > p {
+#company > div:nth-child(2) > p {
   cursor: default;
 }
-#main > div > p:hover {
+#company > div > p:hover {
   color: black;
 }
-#main > div:nth-child(3) {
+#company > div:nth-child(3) {
   cursor: pointer;
 }
-#main > div:first-child {
+#company > div:first-child {
   cursor: pointer;
 }
-#main > div:nth-child(3) {
+#company > div:nth-child(3) {
   margin-right: 10px;
   display: grid;
   justify-content: center;
@@ -68,7 +68,7 @@
   width: auto;
 }
 
-#container > div:nth-child(1) {
+#rajat > div:nth-child(1) {
   width: 100%;
 
   padding: 104px 12px 56px 12px;
@@ -76,10 +76,10 @@
   font-size: 26px;
   font-weight: bolder;
 }
-#container > div:nth-child(1) > h3 {
+#rajat > div:nth-child(1) > h3 {
   color: #767676;
 }
-#container > div:nth-child(2) {
+#rajat > div:nth-child(2) {
   width: 100%;
 
   /* padding: 64px 0px 64px 0px; */
@@ -138,11 +138,11 @@
 #firstImg {
   height: 350px;
 }
-#container > div:nth-child(3) {
+#rajat > div:nth-child(3) {
   width: 100%;
   padding: 104px 12px 56px 12px;
 }
-#container > div:nth-child(3) > div:nth-child(1) {
+#rajat > div:nth-child(3) > div:nth-child(1) {
   width: 70%;
   margin: auto;
   margin-bottom: 40px;
@@ -257,16 +257,16 @@ hr {
   cursor: pointer;
 }
 @media all and (min-width: 620px) and (max-width: 1024px) {
-  #main {
+  #company {
     width: 100%;
     height: 70px;
   }
-  #main > div:nth-child(1) > a {
+  #company > div:nth-child(1) > a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  #main > div:nth-child(2) {
+  #company > div:nth-child(2) {
     margin: auto;
     width: 100%;
     display: flex;
@@ -275,16 +275,16 @@ hr {
     align-items: center;
     gap: 20px;
   }
-  #main > div:nth-child(2) > p {
+  #company > div:nth-child(2) > p {
     font-size: 15px;
   }
-  #main > div:nth-child(3) {
+  #company > div:nth-child(3) {
     display: none;
   }
-  #container > div:nth-child(1) {
+  #rajat > div:nth-child(1) {
     width: 100%;
   }
-  #container > div:nth-child(2) {
+  #rajat > div:nth-child(2) {
     width: 100%;
     padding-bottom: 20px;
   }
@@ -313,7 +313,7 @@ hr {
   #container > div:nth-child(3) {
     width: 100%;
   }
-  #container > div:nth-child(3) > div:nth-child(1) {
+  #rajat > div:nth-child(3) > div:nth-child(1) {
     width: 100%;
     margin: auto;
   }
@@ -345,30 +345,30 @@ hr {
   }
 }
 @media all and (min-width: 50px) and (max-width: 619px) {
-  #main {
+  #company {
     width: 100%;
     height: 70px;
   }
-  #main > div:nth-child(1) > a {
+  #company > div:nth-child(1) > a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  #main > div:nth-child(2) {
+  #company > div:nth-child(2) {
     margin: auto;
     width: 100%;
    
   }
-  #main > div:nth-child(2) > p {
+  #company > div:nth-child(2) > p {
     font-size: 15px;
   }
-  #main > div:nth-child(3) {
+  #company > div:nth-child(3) {
     display: none;
   }
-  #container > div:nth-child(1) {
+  #rajat > div:nth-child(1) {
     width: 100%;
   }
-  #container > div:nth-child(2) {
+  #rajat > div:nth-child(2) {
     width: 100%;
     padding-bottom: 20px;
   }
@@ -394,10 +394,10 @@ hr {
     width: 100%;
     height: 375px;
   }
-  #container > div:nth-child(3) {
+  #rajat > div:nth-child(3) {
     width: 100%;
   }
-  #container > div:nth-child(3) > div:nth-child(1) {
+  #rajat > div:nth-child(3) > div:nth-child(1) {
     width: 100%;
     margin: auto;
   }
