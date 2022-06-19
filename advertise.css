@@ -3,7 +3,7 @@
     padding:0px;
     box-sizing: border-box;
 }
-#container{
+#aks{
     width:90%;
     display:flex;
     justify-content: space-around;
@@ -12,18 +12,18 @@
     height:600px;
     
 }
-#container>div{
+#aks>div{
     height:600px;
     width:100%;
    
 }   
 
-#container>div:nth-child(1){
+#aks>div:nth-child(1){
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
-#container>div:nth-child(2){
+#aks>div:nth-child(2){
     margin-right:-80px;
     margin-top: 40px;
 }
