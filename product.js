@@ -80,6 +80,7 @@ item.forEach(function(elem){
     div.append(topic,subTopic,footer)
     product.append(image,div);
     document.querySelector("#adsContainer").append(product); 
+    
 })
 let loadMorebtn = document.querySelectorAll("#adsContainer>div");
 let btn = document.querySelector("#LoadMore");

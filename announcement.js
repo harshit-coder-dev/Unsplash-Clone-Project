@@ -64,6 +64,7 @@ let item = [
 
 ]
 
+
 item.forEach(function(elem){
     let product = document.createElement("div")
     let image = document.createElement("img")

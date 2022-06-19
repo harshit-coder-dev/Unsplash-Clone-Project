@@ -334,6 +334,7 @@ function display(data) {
   });
 }
 
+
 document
   .querySelector(".fa-hamburger-menu")
   .addEventListener("click", function () {

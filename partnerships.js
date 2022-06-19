@@ -81,6 +81,7 @@ item.forEach(function(elem){
     product.append(image,div);
     document.querySelector("#adsContainer").append(product); 
 })
+
 let loadMorebtn = document.querySelectorAll("#adsContainer>div");
 let btn = document.querySelector("#LoadMore");
 let curr = 6;

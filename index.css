@@ -17,6 +17,7 @@ body {
   z-index: 1;
 }
 
+
 #navbar > .row-1 {
   display: grid;
   grid-template-columns: 60px minmax(auto, 50%) 1fr auto;

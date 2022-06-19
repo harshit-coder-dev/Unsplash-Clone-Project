@@ -24,8 +24,14 @@ if (currentUser) {
 		"a[href='SignUp.html']"
 	).style.display = "none";
 
+
 	document.querySelector(".fa-hamburger-menu").style.marginRight = "70px";
 	document.querySelector(".fa-hamburger-menu").style.marginLeft = "40px";
 
 	document.querySelector("#menu").style.right = "60px";
 }
+
+
+
+
+

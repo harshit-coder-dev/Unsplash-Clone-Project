@@ -24,6 +24,7 @@ let objmod = [
     name:"Annie Frank",
     text:"“There’s something about being in an ice cave that feels crazy, thousands of years of ice, silent, and cold, feels too good to be true.” — Nick Gosset 🇨🇦"},
 ]
+
 objmod.forEach(function(elem){
     let product = document.createElement("div");
     let img = document.createElement("img");

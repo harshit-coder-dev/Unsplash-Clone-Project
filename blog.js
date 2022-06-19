@@ -136,6 +136,7 @@ btn.addEventListener("click", function () {
       loadMorebtn[i].style.display = "inline-block";
     }
   }
+  
   curr += 6;
   if (curr >= loadMorebtn.length) {
     btn.style.display = "none";
