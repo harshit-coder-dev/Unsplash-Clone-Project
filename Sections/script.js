@@ -14,11 +14,16 @@ if (currentUser) {
 	const profilePhoto = document.querySelector("#profile-photo");
 	profilePhoto.style.display = "inline-block";
 	document.querySelector("#vertical-bar").style.display = "none";
-	document.querySelector("a[href='Signup & Login/Login.html']").style.display =
-		"none";
 	document.querySelector("#forward-slash").style.display = "none";
-	document.querySelector("a[href='Signup & Login/SignUp.html']").style.display =
-		"none";
+
+	document.querySelector(
+		"a[href='../Signup & Login/Login.html']"
+	).style.display = "none";
+
+	document.querySelector(
+		"a[href='../Signup & Login/SignUp.html']"
+	).style.display = "none";
+
 	document.querySelector(".fa-hamburger-menu").style.marginRight = "70px";
 	document.querySelector(".fa-hamburger-menu").style.marginLeft = "40px";
 }

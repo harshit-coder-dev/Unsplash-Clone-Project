@@ -334,12 +334,6 @@ function display(data) {
 	});
 }
 
-document
-	.querySelector(".fa-hamburger-menu")
-	.addEventListener("click", function () {
-		document.querySelector("#menu").classList.toggle("visible");
-	});
-
 const currentUser = localStorage.getItem("name");
 
 if (currentUser) {
