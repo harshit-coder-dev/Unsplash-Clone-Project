@@ -110,6 +110,8 @@ a {
 	padding-bottom: 20px;
 }
 
+/* Menu Bar- Start */
+
 .visible {
 	display: none;
 }
@@ -237,6 +239,8 @@ svg {
 	margin-top: 6px;
 	margin-right: 10px;
 }
+
+/* Menu Bar- End */
 
 #second {
 	/* background-image: url("https://images.unsplash.com/photo-1652900439414-c0e834dcfa2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQyfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */

@@ -109,6 +109,8 @@ a {
 	padding-bottom: 20px;
 }
 
+/* Menu Bar- Start */
+
 .visible {
 	display: none;
 }
@@ -236,6 +238,8 @@ svg {
 	margin-top: 6px;
 	margin-right: 10px;
 }
+
+/* Menu Bar- End */
 
 #content {
 	margin: 60px 100px 100px;
