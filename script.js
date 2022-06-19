@@ -17,13 +17,15 @@ if (currentUser) {
 	document.querySelector("#forward-slash").style.display = "none";
 
 	document.querySelector(
-		"a[href='../Signup & Login/Login.html']"
+		"a[href='Login.html']"
 	).style.display = "none";
 
 	document.querySelector(
-		"a[href='../Signup & Login/SignUp.html']"
+		"a[href='SignUp.html']"
 	).style.display = "none";
 
 	document.querySelector(".fa-hamburger-menu").style.marginRight = "70px";
 	document.querySelector(".fa-hamburger-menu").style.marginLeft = "40px";
+
+	document.querySelector("#menu").style.right = "60px";
 }
