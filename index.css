@@ -130,6 +130,7 @@ a {
 	right: 49px;
 	top: 62px;
 	border-radius: 3px;
+	z-index: 1;
 }
 
 .info::before {
