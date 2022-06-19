@@ -34,6 +34,11 @@ body {
 }
 
 #profile-photo {
+	width: 20px;
+	height: 20px;
+}
+
+#profile-photo {
 	display: none;
 }
 
@@ -112,6 +117,10 @@ a {
 
 /* Menu Bar- Start */
 
+/* .change {
+	visibility: visible;
+} */
+
 .visible {
 	display: none;
 }
@@ -127,13 +136,13 @@ a {
 	width: 50%;
 	border: 1px solid gray;
 	background-color: white;
-	right: 49px;
-	top: 62px;
+	right: 20px;
+	top: 54px;
 	border-radius: 3px;
 	z-index: 1;
 }
 
-.info::before {
+#info::before {
 	position: absolute;
 	content: " ";
 	height: 13px;
@@ -145,21 +154,21 @@ a {
 	top: -8px;
 	transform: rotate(45deg);
 }
-.info {
+#info {
 	border: 1px solid transparent;
 	display: flex;
 	justify-content: space-evenly;
 }
-.info div ul li {
+#info div ul li {
 	margin-bottom: 20px;
 }
 li {
 	list-style: none;
 }
-.info div ul {
+#info div ul {
 	margin-top: 30px;
 }
-.info div {
+#info div {
 	border: 1px solid transparent;
 }
 a {
@@ -181,6 +190,7 @@ header {
 
 svg {
 	margin-right: 10px;
+	fill: none;
 }
 .fa-brands {
 	color: gray;
@@ -205,40 +215,59 @@ svg {
 	font-size: 14px;
 	cursor: pointer;
 }
+details {
+	display: none;
+}
+
 #footer div {
 	display: flex;
 }
-#Profile {
-	width: 8%;
-	height: 25px;
-	display: flex;
-	margin-left: 50px;
-}
+@media all and (min-width: 400px) and (max-width: 800px) {
+	details {
+		display: block;
+	}
+	summary::marker {
+		content: "";
+	}
+	details + header,
+	details + header + ul,
+	#footer {
+		display: none;
+	}
+	#info {
+		padding: 4px 5px 17px 5px;
 
-#Profile > div:nth-child(1) {
-	width: 60%;
-	height: 25px;
-	margin: auto;
-	display: flex;
-	justify-content: end;
-}
+		flex-direction: column;
+		border: 1px solid transparent;
+	}
+	hr {
+		display: none;
+	}
+	.Arrow {
+		fill: #d1d1d1;
+		position: absolute;
+		right: 64px;
+	}
+	#info div {
+		border: 1px solid transparent;
+		width: 79%;
+		margin: 7px auto auto auto;
+		cursor: pointer;
+	}
+	#info div ul li {
+		margin-bottom: 15px;
+	}
 
-#Profile > div:nth-child(2) {
-	width: 30%;
-	height: 25px;
+	#bar {
+		position: absolute;
+		top: 23px;
+		right: 51px;
+	}
 
-	margin: auto;
-	display: flex;
-}
-
-#Profile > img > {
-	width: 100%;
-	height: auto;
-	margin: auto;
-}
-#Profile > div > h5 {
-	margin-top: 6px;
-	margin-right: 10px;
+	#menu {
+		width: 320px;
+		padding-bottom: 15px;
+	}
 }
 
 /* Menu Bar- End */
@@ -363,7 +392,7 @@ svg {
 }
 
 @media only screen and (max-width: 1000px) {
-	#gallery {
+	#container {
 		column-count: 2;
 	}
 }
@@ -379,7 +408,7 @@ svg {
 }
 
 @media only screen and (max-width: 700px) {
-	#gallery {
+	#container {
 		column-count: 1;
 	}
 }

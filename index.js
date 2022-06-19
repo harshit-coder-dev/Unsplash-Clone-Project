@@ -1,9 +1,3 @@
-document
-	.querySelector(".fa-hamburger-menu")
-	.addEventListener("click", function () {
-		document.querySelector("#menu").classList.toggle("visible");
-	});
-
 let data = [
 	{
 		back: "https://images.unsplash.com/photo-1655461326824-36a8625570cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60",
@@ -339,8 +333,28 @@ function display(data) {
 		main.append(box);
 	});
 }
-{
-	/* <i class="fa-solid fa-heart"></i>
-<i class="fa-solid fa-plus"></i>
-<i class="fa-solid fa-download"></i> */
+
+document
+	.querySelector(".fa-hamburger-menu")
+	.addEventListener("click", function () {
+		document.querySelector("#menu").classList.toggle("visible");
+	});
+
+const currentUser = localStorage.getItem("name");
+
+if (currentUser) {
+	const userNameElem = document.querySelector("#user-name");
+	userNameElem.style.display = "inline";
+	userNameElem.style.fontStyle = "italic";
+	userNameElem.innerText = currentUser;
+	const profilePhoto = document.querySelector("#profile-photo");
+	profilePhoto.style.display = "inline-block";
+	document.querySelector("#vertical-bar").style.display = "none";
+	document.querySelector("a[href='Signup & Login/Login.html']").style.display =
+		"none";
+	document.querySelector("#forward-slash").style.display = "none";
+	document.querySelector("a[href='Signup & Login/SignUp.html']").style.display =
+		"none";
+	document.querySelector(".fa-hamburger-menu").style.marginRight = "70px";
+	document.querySelector(".fa-hamburger-menu").style.marginLeft = "40px";
 }

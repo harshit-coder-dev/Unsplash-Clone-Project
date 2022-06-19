@@ -1,0 +1,176 @@
+.change {
+    visibility: visible;
+  }
+  #bar{
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  span+div{
+    visibility: hidden;
+  }
+  #menu {
+      position: absolute;
+      width: 50%;
+      border: 1px solid gray;
+      background-color: white;
+      right: 49px;
+      top: 62px;
+      border-radius: 3px;
+    }
+  
+    #info::before {
+      position: absolute;
+      content: " ";
+      height: 13px;
+      width: 13px;
+      border-left: 1px solid gray;
+      border-top: 1px solid gray;
+      background: white;
+      right: 9px;
+      top: -8px;
+      transform: rotate(45deg);
+    }
+    #info {
+      border: 1px solid transparent;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #info div ul li {
+      margin-bottom: 20px;
+    }
+    li {
+      list-style: none;
+    }
+    #info div ul {
+      margin-top: 30px;
+    }
+    #info div {
+      border: 1px solid transparent;
+    }
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+   header p {
+      color: black;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      border: 1px solid transparent;
+      height: 22px;
+      margin-top: 25px;
+    }
+  
+    svg {
+      margin-right: 10px;
+      fill: none;
+    }
+    .fa-brands {
+      color: gray;
+      margin-right: 21px;
+      font-size: 19px;
+      cursor: pointer;
+    }
+    #footer ul {
+      display: flex;
+      border: 1px solid transparent;
+      gap: 35px;
+    }
+    #footer {
+      display: flex;
+      justify-content: space-around;
+      gap: 62px;
+      align-items: center;
+    }
+    #language {
+      border: none;
+      color: gray;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    details{
+      display: none;
+    }
+  
+    #footer div {
+      display: flex;
+    }
+    @media all and (min-width:400px) and (max-width:800px) {
+      details{
+        display: block;
+      }
+      summary::marker {
+        content: "";
+      }
+      details + header,
+      details + header + ul,
+      #footer {
+        display: none;
+      }
+      #info {
+        padding: 4px 5px 17px 5px;
+  
+        flex-direction: column;
+        border: 1px solid transparent;
+      }
+      hr {
+        display: none;
+      }
+      .Arrow {
+        fill: #d1d1d1;
+        position: absolute;
+        right: 64px;
+      }
+      #info div {
+        border: 1px solid transparent;
+        width: 79%;
+        margin: 7px auto auto auto;
+        cursor: pointer;
+      }
+      #info div ul li {
+        margin-bottom: 15px;
+      }
+  
+      #menu {
+        width: 320px;
+        padding-bottom: 15px;
+      }
+      #right > ul > li {
+        margin: 0px;
+        display: none;
+    }
+    #right > ul > li:last-child{
+      display: block;
+    }
+    #left input[type="text"] {
+      border-radius: 26px;
+      padding: 9px 13px;
+      margin-left: 10px;
+      width: 110%;
+    }
+    #right > ul > li > a {
+      display: block;
+      padding: 3px 6px;
+      font-size: 16px;
+  }
+  #top{
+    width: 100%;
+  }
+  #left{
+    width: 70%;
+  }
+  #right{
+    width: 15%;
+  
+  }
+  #bar{
+    position: absolute;
+    top: 23px;
+    right: 51px;
+  }
+  
+    }
